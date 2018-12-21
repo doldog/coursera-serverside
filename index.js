@@ -1,10 +1,6 @@
-const rect = {
-        perimeter: (x, y) => (2 * (x + y)),
-        area: (x, y) => (x * y)
-};
-
+var rect = require('./rectangle');
 let solveRect = function(l,w){
-    console.log(`Solving for rectangle with l =  ${l} w = ${w}` );
+    console.log(`Solving for rectangle with l =  ${l}, w = ${w}` );
     if (l <= 0 || w <= 0) console.log("wrong dimension");
     else {
         console.log(`The area of the rect is ${rect.area(l,w)}`);
